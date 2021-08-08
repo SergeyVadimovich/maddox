@@ -1,0 +1,44 @@
+// fonts
+%sf-300{
+  font-family: 'SFProDisplay';
+  font-weight: 300;
+}
+%sf-400{
+  font-family: 'SFProDisplay';
+  font-weight: 400;
+}
+%sf-500{
+  font-family: 'SFProDisplay';
+  font-weight: 500;
+}
+%sf-600{
+  font-family: 'SFProDisplay';
+  font-weight: 600;
+}
+%sf-700{
+  font-family: 'SFProDisplay';
+  font-weight: 700;
+}
+%morebi{
+  font-family: 'Morebi';
+  font-weight: 400;
+}
+%mulish-400{
+  font-family: 'Mulish';
+  font-weight: 400;
+}
+%mulish-800{
+  font-family: 'Mulish';
+  font-weight: 800;
+}
+// end fonts
+
+// cursor
+%pointer{
+  cursor: pointer;
+}
+
+// color
+$default: #fff;
+$link:#A2F21E;
+$bg: #323234;
