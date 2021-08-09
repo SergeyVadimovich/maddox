@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('#sendform');
   const formInput = form.querySelectorAll('.contact__form-input');
   const formItem = Array.from(formInput);
-function checkForEmty(value){
+
+  
+function checkForEmpty(value){
   return !value;
 }
 
@@ -12,11 +14,11 @@ function validation(){
     const currentInput = formItem[i];
     let isEmpty;
     if(currentInput.value.length === 0){
-      isEmpty = checkForEmty(currentInput.value);
+      isEmpty = checkForEmpty(currentInput.value);
     }
     if(isEmpty){
       currentInput.classList.add('error-marker');
-      currentInput.setAttribute('placeholder', 'not required');
+      currentInput.setAttribute('placeholder', 'this field must be filled');
     }
   }
 }

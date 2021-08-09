@@ -33,7 +33,7 @@
       margin: 0 auto;
     }
     &__item-content{
-      padding: 40px 0 10px 15px;
+      padding: 40px 10px 15px;
     }
     &__item-content--right{
       text-align: right;
@@ -42,38 +42,48 @@
       max-width: none;
     }
     &__item-decor{
-      width:10%;
+      display: none;
+    }
+    &__item-title--left{
+      position:relative;
       &::before{
-        top:0;
+        content:'';
+        position:absolute;
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/about/about-decor.svg');
+        top:-115px;
+        left:-10px;
       }
       &::after{
-        height: 100px;
+        content:'';
+        position:absolute;
         width: 1px;
+        height: 75px;
+        background-color: $link;
+        left: 0;
+        top: -80px;
       }
     }
-    &__item-decor--right{
-      left: 35%;
-      bottom:240px;
+    &__item-title--right{
+      position:relative;
       &::before{
-        left: -37px;
-        top: -60px;
+        content:'';
+        position:absolute;
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/about/about-decor.svg');
+        top:-115px;
+        right: -10px;
       }
       &::after{
-        left: -27px;
-        right: 0px;
-        top: -37px;
-      }
-    }
-    &__item-decor--left{
-      right:30%;
-      bottom:300px;
-      &::before{
-        left:76px;
-      }
-      &::after{
-        right:0;
-        left:86px;
-        top:30px;
+        content:'';
+        position:absolute;
+        width: 1px;
+        height: 75px;
+        background-color: $link;
+        top: -80px;
+        right: 0;
       }
     }
   }

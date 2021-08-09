@@ -272,6 +272,7 @@
     display: flex;
     justify-content: space-between;
     transition: transform .4s;
+    overflow-x: hidden;
     &::after{
       content:'';
       position:absolute;
@@ -309,7 +310,8 @@
   // decor
   &__item-decor{
     position:absolute;
-    width:25%;
+    top: 100px;
+    width:100%;
     &::before{
       content:'';
       position: absolute;
@@ -330,21 +332,23 @@
     }
   }
   &__item-decor--right{
+    left: 40%;
     &::before{
-      left:-180px;
+      left:0;
     }
     &::after{
-      left:-150px;
-      right: -175px;
+      left:30px;
+      right:0;
     }
   }
   &__item-decor--left{
+    right: 40%;
     &::before{
-      right:-270px;
+      right:0;
     }
     &::after{
-      right:-220px;
-      left:-70px;
+      right:30px;
+      left:0;
     }
   }
   // end decor
@@ -419,6 +423,19 @@
     font-size: 45px;
     line-height: 55px;
     font-weight: 700;
+  }
+  &__info--star{
+    position: relative;
+    &::after{
+      content:"";
+      position:absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url('../images/statistic/star-icon.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
   }
   &__text{
     font-size: 13px;
